@@ -88,6 +88,21 @@ h1 {
   font-family: "Pacifico", cursive;
 }
 
+h2 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  padding: 30px 0;
+  color: #850e35;
+}
+
+.underline {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 200px;
+  height: 3px;
+  background-color: #850e35;
+}
+
 nav {
   width: 100%;
   z-index: 1;
@@ -166,6 +181,14 @@ header .header-img .fa-chevron-down {
 
 .aboutus {
   height: 1000px;
+}
+.aboutus .aboutus_card {
+  display: flex;
+}
+.aboutus .aboutus_card img {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
 }
 
 .pricing {
