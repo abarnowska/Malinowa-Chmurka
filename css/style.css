@@ -136,7 +136,6 @@ header .header-img {
   height: 100vh;
   background-image: url("../css/img/hero-small.jpg");
   background-size: cover;
-  background-attachment: scroll;
   z-index: 0;
 }
 header .header-img .header-bg {
@@ -228,5 +227,15 @@ header .header-img .fa-chevron-down {
 @media (min-width: 1200px) {
   header .header-img {
     background-image: url("../css/img/hero-big.jpg");
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  .header-img {
+    background-attachment: scroll;
+  }
+}
+@supports not (-webkit-touch-callout: none) {
+  .header-img {
+    background-attachment: fixed;
   }
 }/*# sourceMappingURL=style.css.map */

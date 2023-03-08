@@ -72,7 +72,6 @@ header {
 		height: 100vh;
 		background-image: url("../css/img/hero-small.jpg");
 		background-size: cover;
-		background-attachment: scroll;
 		z-index: 0;
 		.header-bg {
 			position: absolute;
@@ -199,3 +198,15 @@ header {
 		}
 	}
 }
+
+@supports ( -webkit-touch-callout : none) {
+	.header-img {
+	background-attachment:scroll
+	}
+	}
+	
+	@supports not ( -webkit-touch-callout : none) {
+	.header-img {
+	background-attachment: fixed;
+	}
+	}
