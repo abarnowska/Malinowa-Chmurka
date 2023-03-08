@@ -92,7 +92,7 @@ h2 {
   font-family: "Pacifico", cursive;
   text-align: center;
   padding: 30px 0;
-  color: #850e35;
+  color: #B73E3E;
 }
 
 .underline {
@@ -100,7 +100,7 @@ h2 {
   margin-bottom: 40px;
   width: 200px;
   height: 3px;
-  background-color: #850e35;
+  background-color: #B73E3E;
 }
 
 nav {
@@ -108,7 +108,7 @@ nav {
   z-index: 1;
 }
 nav .navbar-brand i {
-  color: #ffc4c4;
+  color: #EDDBC0;
 }
 nav .navbar-brand .logo-text {
   font-family: "Pacifico", sans-serif;
@@ -125,10 +125,10 @@ nav .navbar-nav .nav-link {
   color: white;
 }
 nav .navbar-nav a:hover {
-  color: #ffc4c4;
+  color: #EDDBC0;
 }
 nav .navbar-nav .nav-link.active {
-  color: #ffc4c4;
+  color: #EDDBC0;
 }
 
 header .header-img {
@@ -159,7 +159,7 @@ header .header-img .header-text {
 header .header-img .header-text i {
   padding: 20px;
   font-size: 90px;
-  color: #ffc4c4;
+  color: #EDDBC0;
 }
 header .header-img .header-text h1 {
   color: white;
