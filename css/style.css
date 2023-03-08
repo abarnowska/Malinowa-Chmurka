@@ -136,6 +136,7 @@ header .header-img {
   height: 100vh;
   background-image: url("../css/img/hero-small.jpg");
   background-size: cover;
+  background-attachment: scroll;
   z-index: 0;
 }
 header .header-img .header-bg {
