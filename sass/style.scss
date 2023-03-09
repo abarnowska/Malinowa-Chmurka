@@ -6,43 +6,41 @@
 	padding: 0;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
-	font-size: 18px;
 }
 
 h1 {
 	font-family: "Pacifico", cursive;
+	font-size: 2.4rem;
 }
 
 h2 {
 	font-family: "Pacifico", cursive;
 	text-align: center;
-	padding: 30px 0;
+	font-size: 2.4rem;
+	padding: 3rem;
 	color: $dark-pink;
-}
-
-.underline {
-	margin: 0 auto;
-	margin-bottom: 40px;
-	width: 200px;
-	height: 3px;
-	background-color: $dark-pink;
 }
 
 nav {
 	width: 100%;
 	z-index: 1;
 
-
 	.navbar-brand {
 		i {
 			color: $light-pink;
+			font-size: 1.5rem;
 		}
 
 		.logo-text {
 			font-family: "Pacifico", sans-serif;
 			color: white;
+			font-size: 1.5rem;
 		}
 	}
 
@@ -53,6 +51,7 @@ nav {
 
 	.navbar-nav {
 		text-transform: uppercase;
+		font-size: 2rem;
 
 		.nav-link {
 			color: white;
@@ -121,13 +120,29 @@ header {
 }
 
 .aboutus {
-	height: 1000px;
+	height: 100vh;
+	background-color: $bg-color;
 	.aboutus_card {
+		position: relative;
 		display: flex;
+		height: 30rem;
+		padding: 3rem;
+		border-radius: 8px;
+		background-color: $light-pink;
 		img {
-			width: 30%;
-			height: 30%;
+			position: absolute;
+			top: -20px;
+			left: -20px;
+			width: 30rem;
+			height: 30rem;
 			border-radius: 50%;
+		}
+		.aboutus_text {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 70%;
+			padding: 2rem;
 		}
 	}
 }
@@ -199,14 +214,14 @@ header {
 	}
 }
 
-@supports ( -webkit-touch-callout : none) {
+@supports (-webkit-touch-callout: none) {
 	.header-img {
-	background-attachment:scroll
+		background-attachment: scroll;
 	}
-	}
-	
-	@supports not ( -webkit-touch-callout : none) {
+}
+
+@supports not (-webkit-touch-callout: none) {
 	.header-img {
-	background-attachment: fixed;
+		background-attachment: fixed;
 	}
-	}
+}
